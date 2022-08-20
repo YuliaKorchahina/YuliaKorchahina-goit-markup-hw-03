@@ -75,8 +75,8 @@ button {
 
 /* !!!------------------header!!!------------------ */
 .logo-header {
-    margin: 24px 93px 25px auto;
     color: var(--accent-color);
+    margin: 24px 93px 25px auto;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -149,7 +149,6 @@ button {
     background-color: var(--background-color-dark);
     width: 696px;
     margin: 0 auto;
-    padding-top: 200px;
     margin-bottom: 30px;
 
     text-transform: uppercase;
@@ -162,6 +161,7 @@ button {
 .hero {
     background-color: var(--background-color-dark);
     text-align: center;
+    padding: 200px 0;
 }
 
 /* !!!------------------hero-button!!!------------------ */
@@ -171,7 +171,6 @@ button {
     color: var(--white);
     border: var(--accent-color);
     border-radius: 4px;
-    margin-bottom: 200px;
     padding: 10px 32px;
 
     font-weight: 700;
@@ -186,10 +185,14 @@ button {
 }
 
 /* !!!------------------features!!!------------------ */
+
+.features {
+    padding-bottom: 0;
+}
+
 .features-list {
     display: flex;
     gap: 30px;
-    padding-top: 94px;
 }
 
 .visually-hidden {
@@ -212,6 +215,7 @@ button {
     font-weight: 700;
     line-height: 16px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .features-text {
@@ -221,14 +225,14 @@ button {
 
 }
 
-/* !!!------------------examples!!!------------------ */
+/* !!!----------------Чим ми займаємося!!!---------------- */
 .examples-title {
     color: var(--maine);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .examples-list.list {
@@ -276,6 +280,10 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-card-item {
+    margin-bottom: 30px;
+}
+
 .team-list.list {
     display: flex;
     column-gap: 30px;
@@ -310,6 +318,10 @@ button {
     line-height: 1.71;
 }
 
+.footer-location {
+    margin-bottom: 20px;
+}
+
 .logo-fotter.link {
     display: inline-block;
     margin-bottom: 20px;
@@ -326,11 +338,7 @@ button {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact.link {
-    display: inline-block
-}
-
-.footer-contact.item:nth-child(2) {
+.footer-contact-item {
     margin-bottom: 9px;
 }
 
@@ -381,13 +389,12 @@ button {
     line-height: 1.9;
 }
 
-.projects-item {
-    border: 1px solid var(--border-color);
-}
-
 .project-description {
-    width: 322px;
-    margin: auto;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    padding: 20px 24px 54px 24px;
 }
 
 .address :hover,
